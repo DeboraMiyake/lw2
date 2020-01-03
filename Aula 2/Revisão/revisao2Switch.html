@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercicio 2</title>
+    </head>
+    <body> 
+    <script>
+       var nomeMes; var feriados; var mes;
+       mes= Number (prompt ("Digite o mês"));
+       switch (mes) {
+           case 1:   nomeMes = "Janeiro";
+                     feriados = "01- Confraternização Universal <br/> 06- Dia Reis";
+                     break;
+           case 2:   nomeMes = "Fevereiro";
+                     feriados = "13- Carnaval <br/> 14- Cinzas";
+                     break;
+           case 3:   nomeMes = "Março";
+                     feriados = "30- Paixão";
+                     break;
+           case 4:   nomeMes = "Abril";
+                     feriados = "01 Páscoa <br/> 21- Tiradentes";
+                     break;   
+           case 5:   nomeMes = "Maio";
+                     feriados = "01- Dia do Trabalhador <br/> 13- Dia das mães <br/> 31- Corpus Christi";
+                     break;
+           case 6:   nomeMes = "Junho";
+                     feriados = "O mês de junho não possui feriados";
+                     break;
+           case 7:   nomeMes = "Julho";
+                     feriados = "O mês de julho não possui feriados";
+                     break;
+           case 8:   nomeMes = "Agosto";
+                     feriados = "12- Dia dos pais";
+                     break; 
+           case 9:   nomeMes = "Setembro";
+                     feriados = "07- Dia da Independência";
+                     break;
+           case 10:  nomeMes = "Outubro";
+                     feriados = "12- Dia das crianças";
+                     break;
+           case 11:  nomeMes = "Novembro";
+                     feriados = "02- Dia de Finados <br/> 15/11 Proclamação da República <br/> 20/11 Consciência Negra";
+                     break;
+           case 12:  nomeMes = "Dezembro";
+                     feriados = "25- Natal";      
+       } 
+       document.write ("Feriados do mês de " +nomeMes);
+       document.write ("<br> Os feriados são: " +feriados);    
+    </script> 
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- Débora Miyake 1800272 Turma A -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Maioridade</title>
+    </head>
+    <body> 
+    <script>
+		function maiorIdade(id) {
+			if(id >= 18) {
+			document.write ("maior de idade <br/>");  
+		    }
+			else {
+			document.write ("menor de idade <br/>");  
+		  }
+		}
+		var idade=1;
+		while (idade >= 0) {
+			idade = Number(prompt("Digite a idade ",1));
+			if(idade > 0) {
+			document.write ("Idade = "+idade+" Você é ");
+			maiorIdade(idade);
+		}
+		}
+    </script> 
+    </body> 
+</html>

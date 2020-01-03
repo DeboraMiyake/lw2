@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- Débora Miyake 1800272 Turma A -->
+<html>
+    <head>
+		<title>--Formulário Contato--</title>
+        <meta charset="utf-8" />
+		<script src="javascript.js"></script>
+    </head>
+    <body> 
+	<form name="meu_form">
+	<h1>Entre em contato</h1>
+	<fieldset>
+	<legend>Dados pessoais:</legend>
+	 <p class="nome">
+	 <label for="nome">Nome</label>
+	 <input type="text" id="nomeid" placeholder="Seu nome" required="required" name="nome" />
+	 </p>
+	 <p class="fone">
+	 <label for="fone">Fone</label>
+	 <input type="text" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
+	 </p>
+	 <p>
+	 <label for="email">Email</label>
+	 <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
+	 </p>
+	 <p class="mensagem">
+	 <label for="opiniao">Mensagem</label>
+	 </p>
+	 <p>
+	 <textarea placeholder="Deixe sua opnião">
+	 </textarea>
+	 </p>
+	 <p class="submit">
+	 <input type="submit" onclick="enviar()" value="Enviar" />
+	 </p>
+	 </fieldset>
+	 </form>
+    </body> 
+</html>

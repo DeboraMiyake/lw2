@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora</title>
+    </head>
+    <body>
+    <script>
+        function soma() {
+            a = document.sm.v1.value;
+            b = document.sm.v2.value;
+            soma = parseFloat(a) + parseFloat(b);
+            document.sm.v3.value = soma;
+        }
+		 function sub() {
+            a = document.sb.v1.value;
+            b = document.sb.v2.value;
+            sub = parseFloat(a) - parseFloat(b);
+            document.sb.v3.value = sub;
+        }
+		function multi() {
+            a = document.m.v1.value;
+            b = document.m.v2.value;
+            multi = parseFloat(a) * parseFloat(b);
+            document.m.v3.value = multi;
+        }
+		function div() {
+            a = document.d.v1.value;
+            b = document.d.v2.value;
+            div = parseFloat(a) / parseFloat(b);
+            document.d.v3.value = div;
+        }
+    </script> 
+        <h2>Calculadora</h2>
+         <form name=sm>
+            <input type="text" name="v1" size="3"> +
+            <input type="text" name="v2" size="3">
+            <input type="button" value=" = " onclick="soma()">
+            <input type="text" name="v3" size="3">
+            <br/><br/>   
+        </form>
+		<form name=sb>
+            <input type="text" name="v1" size="3"> -
+            <input type="text" name="v2" size="3">
+            <input type="button" value=" = " onclick="sub()">
+            <input type="text" name="v3" size="3">
+            <br/><br/>   
+        </form>
+		 <form name=m>
+            <input type="text" name="v1" size="3"> *
+            <input type="text" name="v2" size="3">
+            <input type="button" value=" = " onclick="multi()">
+            <input type="text" name="v3" size="3">
+            <br/><br/>   
+        </form>
+		<form name=d>
+            <input type="text" name="v1" size="3"> /
+            <input type="text" name="v2" size="3">
+            <input type="button" value=" = " onclick="div()">
+            <input type="text" name="v3" size="3">
+            <br/><br/>   
+        </form>
+    </body>
+</html>

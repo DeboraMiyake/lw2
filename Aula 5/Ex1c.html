@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- Débora Miyake 1800272 Turma A -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Revisão</title>
+    </head>
+    <body> 
+    <script>
+    var alunos = [], cont = 1, maiorNota, soma = 0, media = 0;
+    alunos.numero = 1;
+        
+    while(alunos.numero != 0) {
+    alunos = {numero: Number(prompt("Digite o número do aluno: ")),
+    nota: Number(prompt("Digite a nota do aluno: "))};
+
+    if (cont == 1) {
+    maiorNota = alunos.nota;
+    numero = alunos.numero;
+    }
+    if ((alunos.nota > maiorNota) && (alunos.numero != 0)) {
+    maiorNota = alunos.nota;
+    numero = alunos.numero;
+    }
+    cont++;
+    soma+=alunos.nota;
+    }
+    media = (soma/(cont - 1));
+    document.write("Maior nota é do aluno "+numero+" que conseguiu nota "+maiorNota);
+    document.write("<br/> A média é " +media);
+        
+ </script>
+    </body>
+</html>

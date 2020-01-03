@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="CSS.css" />
+        <link rel="icon" href="img/navicon.png" />
+        <title>Quiz</title>
+    </head>
+    <body>
+        <nav>
+            <div class="navLimit">
+                <div class="navPags">
+                    <div class="navItem">
+                        <a href="index.html">
+                            <h4>O que é?</h4>
+                        </a>
+                    </div>
+                    <div class="navItem">
+                        <a href="cancer-de-mama.html">
+                            <h4>Câncer de Mama</h4>
+                        </a>
+                    </div>
+                    <div class="navItem">
+                        <a href="prevencao.html">
+                            <h4>Prevenção</h4>
+                        </a>
+                    </div>
+                   <div class="navItem">
+                        <a href="quiz.html">
+                            <h4 style="color: #ffffff;">Quiz</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+            <div class="header-post">
+                <div class="content">
+                    <h1 class="post-title">Outubro Rosa</h1>
+                    <p class="subtitle">Responda o Quiz Referênte ao Câncer de Mama.</p><p class="subtitle"> Utilize seus Conhecimentos e Veja o Quanto Acerta!</p>
+                        <br><br>
+
+                    <div class="quiz">
+                            <a href="#quiz"> 
+
+                                <p class="subtitle">Começar Quiz</p>
+
+                            </a>
+
+                    </div>
+                </div>
+            </div>
+        
+        
+        
+        <main class="post">
+                        <aside class="topo">
+                         <a href="quiz.html"><img src="img/setatopo.png" /></a>
+                        </aside>
+                        <aside class="baixo">
+                         <a href="#baixo"><img src="img/setatopo.png"/></a>
+                        </aside>
+            <div class="mainLimit">
+                
+			<script language="JavaScript"> 
+ 		
+      		var pontos=0; 
+            function reponse(form) { 
+            for (var i=0;i<form.length;i++){ 
+            if (form[i].checked){ 
+                    break 
+            } 
+            }
+                
+            var answer="" 
+                    if (i<form.length){ 
+                    answer = form[i].value 
+                    } 
+            return answer; 
+            } 
+    
+
+        function solution(form) { 
+                        
+            var points=0;var rep="";
+            var comment="";
+            var resposta1="";
+            var resposta2="";
+            var resposta3="";
+            var resposta4="";
+            var resposta5="";
+            var resposta6="";
+            var resposta7="";
+            var resposta8="";
+            var resposta9="";
+            var onome=""
+            
+            if (reponse(form.question1)=="C") {pontos+=1} 
+            if (reponse(form.question2)=="C") {pontos+=1} 
+            if (reponse(form.question3)=="B") {pontos+=1}
+            if (reponse(form.question4)=="A") {pontos+=1}
+            if (reponse(form.question5)=="A") {pontos+=1}
+            if (reponse(form.question6)=="C") {pontos+=1} 
+            if (reponse(form.question7)=="B") {pontos+=1} 
+            if (reponse(form.question8)=="A") {pontos+=1} 
+            if (reponse(form.question9)=="C") {pontos+=1} 
+            
+            if (reponse(form.question1)=="") {resposta1="<font color=#cccccc>não respondida</font>"} 
+            if (reponse(form.question1)=="A") {resposta1="<font color=#FF0000>incorreta</font>"} 
+            if (reponse(form.question1)=="B") {resposta1="<font color=#FF0000>incorreta</font>"}
+            if (reponse(form.question1)=="C") {resposta1="<font color=#238E23>correta</font>"}
+            
+            if (reponse(form.question2)=="") {resposta2="<font color=#cccccc>não respondida</font>"} 
+            if (reponse(form.question2)=="A") {resposta2="<font color=#FF0000>incorreta</font>"} 
+            if (reponse(form.question2)=="B") {resposta2="<font color=#FF0000>incorreta</font>"}
+            if (reponse(form.question2)=="C") {resposta2="<font color=#238E23>correta</font>"}
+            
+            if (reponse(form.question3)=="") {resposta3="<font color=#cccccc>não respondida</font>"} 
+            if (reponse(form.question3)=="A") {resposta3="<font color=#FF0000>incorreta</font>"} 
+            if (reponse(form.question3)=="B") {resposta3="<font color=#238E23>correta</font>"}
+            if (reponse(form.question3)=="C") {resposta3="<font color=#FF0000>incorreta</font>"}
+
+            if (reponse(form.question4)=="") {resposta4="<font color=#cccccc>não respondida</font>"} 
+            if (reponse(form.question4)=="A") {resposta4="<font color=#238E23>correta</font>"} 
+            if (reponse(form.question4)=="B") {resposta4="<font color=#FF0000>incorreta</font>"}
+            if (reponse(form.question4)=="C") {resposta4="<font color=#FF0000>incorreta</font>"}
+            
+            if (reponse(form.question5)=="") {resposta5="<font color=#cccccc>não respondida</font>"} 
+            if (reponse(form.question5)=="A") {resposta5="<font color=#238E23>correta</font>"} 
+            if (reponse(form.question5)=="B") {resposta5="<font color=#FF0000>incorreta</font>"}
+            if (reponse(form.question5)=="C") {resposta5="<font color=#FF0000>incorreta</font>"}
+            
+            if (reponse(form.question6)=="") {resposta6="<font color=#cccccc>não respondida</font>"} 
+            if (reponse(form.question6)=="A") {resposta6="<font color=#FF0000>incorreta</font>"} 
+            if (reponse(form.question6)=="B") {resposta6="<font color=#FF0000>incorreta</font>"}
+            if (reponse(form.question6)=="C") {resposta6="<font color=#238E23>correta</font>"}
+            
+            if (reponse(form.question7)=="") {resposta7="<font color=#cccccc>não respondida</font>"} 
+            if (reponse(form.question7)=="A") {resposta7="<font color=#FF0000>incorreta</font>"} 
+            if (reponse(form.question7)=="B") {resposta7="<font color=#238E23>correta</font>"}
+            if (reponse(form.question7)=="C") {resposta7="<font color=#FF0000>incorreta</font>"}
+            
+            if (reponse(form.question8)=="") {resposta8="<font color=#cccccc>não respondida</font>"} 
+            if (reponse(form.question8)=="A") {resposta8="<font color=#238E23>correta</font>"} 
+            if (reponse(form.question8)=="B") {resposta8="<font color=#FF0000>incorreta</font>"}
+            if (reponse(form.question8)=="C") {resposta8="<font color=#FF0000>incorreta</font>"}
+            
+            if (reponse(form.question9)=="") {resposta9="<font color=#cccccc>não respondida</font>"} 
+            if (reponse(form.question9)=="A") {resposta9="<font color=#FF0000>incorreta</font>"} 
+            if (reponse(form.question9)=="B") {resposta9="<font color=#FF0000>incorreta</font>"}
+            if (reponse(form.question9)=="C") {resposta9="<font color=#238E23>correta</font>"}
+
+            if (pontos==0) {comment="você não fez pontos, tente novamente"}
+            if (pontos==1) {comment="você fez um ponto, precisa melhorar"}
+            if (pontos==2) {comment="você fez 2 pontos, melhore na próxima"}
+            if (pontos==3) {comment="você precisa melhorar"}
+            if (pontos==4) {comment="você fez 4 pontos, tente novamente"}
+            if (pontos==5) {comment="você fez 5 pontos, continue assim"}
+            if (pontos==6) {comment="você fez 6 pontos, continue assim"}
+            if (pontos==7) {comment="você fez 7 pontos, continue assim"}
+            if (pontos==8) {comment="você fez 8 pontos, está quase lá"}
+            if (pontos==9) {comment="excelente! você acertou todas!"}
+
+         
+            if (pontos==0) {porcentagem="0%"}
+            if (pontos==1) {porcentagem="11%"}
+            if (pontos==2) {porcentagem="22%"}
+            if (pontos==3) {porcentagem="33%"}
+            if (pontos==4) {porcentagem="44%"}
+            if (pontos==5) {porcentagem="55%"}
+            if (pontos==6) {porcentagem="66%"}
+            if (pontos==7) {porcentagem="77%"}
+            if (pontos==8) {porcentagem="88%"}
+            if (pontos==9) {porcentagem="100%"}
+
+
+            chaine='' 
+            +'<head><title>Resultado</title>'+'<style type=text/css>a{font-family:arial;font-size:9pt;color:#696969;text-decoration:none;}#texto{font-family:verdana,arial;font-size:1ren;color:#696969;}#textos{font-family:verdana,arial;font-size:1ren;color:black;}input{border:2px solid #f8f8f8;background-color:fefefe;font-family:arial;font-size:9pt;color:#1c1c1c;}#resultado{font-family:arial;font-size:1ren;color:#696969;}body{margin-top: 50px;}</style>'
+            +'</head><body>'
+            +'<center><font id=texto>Você atingiu um total de <font color=#0099cc><b>'+ pontos +'</b></font> pontos, acertando '+ porcentagem +' das questões.<br><br><font color=#696969>'+comment+'<br>' 
+
+            +'<br><center><font id=texto>'+ formmail.onome.value +' veja abaixo o resumo das questões:</font></center><br>'
+
+            +'<table border=0  cellpading=3 cellspacing=3 style="border:1px solid #f8f8f8;background-color:#ffffff;" width="150">'
+            +"<tr><td><font id=textos>1)</td><td><font id=resultado>"+ resposta1 +"</font></td></tr>"
+            +"<tr><td><font id=textos>2)</td><td><font id=resultado>"+ resposta2 +"</font></td></tr>"
+            +"<tr><td><font id=textos>3)</td><td><font id=resultado>"+ resposta3 +"</font></td></tr>"
+            +"<tr><td><font id=textos>4)</td><td><font id=resultado>"+ resposta4 +"</font></td></tr>"
+            +"<tr><td><font id=textos>5)</td><td><font id=resultado>"+ resposta5 +"</font></td></tr>"
+            +"<tr><td><font id=textos>6)</td><td><font id=resultado>"+ resposta6 +"</font></td></tr>"
+            +"<tr><td><font id=textos>7)</td><td><font id=resultado>"+ resposta7 +"</font></td></tr>"
+            +"<tr><td><font id=textos>8)</td><td><font id=resultado>"+ resposta8 +"</font></td></tr>"
+            +"<tr><td><font id=textos>9)</td><td><font id=resultado>"+ resposta9 +"</font></td></tr>"
+            +"</table></form>"
+            +'<a href="javascript:void(0)" onclick="javascript:window.close()">FECHAR</a>'
+            +'</CENTER></body></HTML>' 
+            
+                solu=open(); 
+                solu.document.write(chaine) 
+}  
+            </script> 
+             
+            <script>
+            function vai() {
+            location.reload()
+            }
+            </script>
+            <form name=formmail>
+                    <div class="mainTitle">
+                <h2 id="quiz">Responda as perguntas</h2>
+                    <div class="mainTitle">
+                <br>
+                <div class="normal">
+                <font>Cada questão vale 1 ponto</font><br>
+                <a href=# onClick="vai()" ><font id=normal>[ Clique aqui para fazer Novamente ]</font></a>
+                </div>
+                <br>
+                <div class="questoes"> 
+                <table border=0 cellpading=3 cellspacing=3 style="border:1px solid #f8f8f8;background-color:#ffffff;">
+                    <h4>
+                        <div class="nome">
+                    <fot>Coloque ao lado o seu Nome:&nbsp;</fot><input type="text" name="onome" value="" size=44 id=input><b>&nbsp;</b><br>
+                        </div>
+              <br>
+            <div id=pergunta> 
+                
+                1 - O câncer de mama é o tipo mais comum na população feminina mundial e brasileira, depois do câncer de pele. Sobre ele é possível afirmar que:
+                <br><br>
+                
+                <font class="resposta">(A)<input type="radio" NAME="question1" VALUE="A"> Atinge principalmente as mulheres antes dos 50 anos</font><br>
+                <font class="resposta">(B)<input type="radio" NAME="question1" VALUE="B"> A incidência é alta, mas vem diminuindo em todo o mundo</font><br>
+                <font class="resposta">(C)<input type="radio" NAME="question1" VALUE="C"> O modo de vida nas sociedades modernas aumenta o risco da doença</font><br>
+                
+                
+            </div>
+                        <br><br>
+                
+             <div id=pergunta> 
+                    
+                2 - Qual das afirmativas abaixo não é um mito?
+                <br><br>
+            
+                <font class="resposta">(A)<input type="radio" NAME="question2" VALUE="A"> Mamas volumosas representam maior risco de desenvolvimento da doença</font><br>
+                <font class="resposta">(B)<input type="radio" NAME="question2" VALUE="B"> Uso de desodorante antitranspirante causa câncer de mama</font><br>
+                <font class="resposta">(C)<input type="radio" NAME="question2" VALUE="C"> Homens também podem ter câncer de mama</font><br>
+            
+            </div>
+                        <br><br>
+
+            <div id=pergunta> 
+                    
+                3 - Os fatores de proteção do câncer de mama são:
+                <br><br>
+                
+                <font class="resposta">(A)<input type="radio" name="question3" VALUE="A"> Atividade física, uso de anticoncepcionais e dieta rica em proteínas</font><br>
+                <font class="resposta">(B)<input type="radio" name="question3" VALUE="B"> Ato de amamentar, atividade física e controle do peso corporal</font><br>
+                <font class="resposta">(C)<input type="radio" name="question3" VALUE="C"> Controle do peso corporal, consumo regular de pequenas doses de álcool e controle do estresse</font><br>
+
+                
+            </div>
+                        <br><br>
+                
+        <div id=pergunta> 
+                    
+                4 - O câncer de mama é influenciado pelos hormônios femininos, e algumas situações da vida reprodutiva aumentam o risco da doença. Dentre elas, destacam-se:
+                <br><br> 
+                    <font class="resposta">(A)<input type="radio" name="question4" VALUE="A"> Não ter tido filhos e não ter amamentado</font><br>
+                    <font class="resposta">(B)<input type="radio" name="question4" VALUE="B"> Menopausa após 50 anos e múltiplas gestações </font><br>
+                    <font class="resposta">(C)<input type="radio" name="question4" VALUE="C"> Não ter amamentado e primeira menstruação após os 12 anos</font><br>
+
+            </div>
+                        <br><br>
+               
+                 <div id=pergunta> 
+                    
+                5 -  A herança genética familiar para o câncer de mama é responsável por aproximadamente:
+                <br><br> 
+                     <font class="resposta">(A)<input type="radio" name="question5" VALUE="A"> 5 a 10% do total de casos</font><br>
+                     <font class="resposta">(B)<input type="radio" name="question5" VALUE="B"> 80% do total dos casos</font><br>
+                     <font class="resposta">(C)<input type="radio" name="question5" VALUE="C"> 50% do total dos casos</font><br>
+
+                
+            </div>
+                        <br><br>
+                
+                 <div id=pergunta> 
+                    
+                6 - Uma das condições que caracterizam risco elevado de câncer de mama é:
+                <br><br> 
+                     <font class="resposta">(A)<input type="radio" name="question6" VALUE="A"> Qualquer história de câncer de mama na família</font><br>
+                     <font class="resposta">(B)<input type="radio" name="question6" VALUE="B"> História familiar de qualquer tipo de câncer</font><br>
+                     <font class="resposta">(C)<input type="radio" name="question6" VALUE="C"> História de câncer de mama em parentes de primeiro grau antes dos 50 anos</font><br>
+
+            </div>
+                        <br><br>
+               
+                 <div id=pergunta> 
+                    
+                7 - O principal sinal/sintoma suspeito de câncer de mama é:
+                    <br><br> 
+                     <font class="resposta">(A)<input type="radio" name="question7" VALUE="A"> Irritação e coceira na pele da mama</font><br>
+                     <font class="resposta">(B)<input type="radio" name="question7" VALUE="B"> Nódulo mamário persistente e endurecido</font><br>
+                     <font class="resposta">(C)<input type="radio" name="question7" VALUE="C"> Inchaço e endurecimento das mamas próximo à menstruação</font><br>
+
+                
+            </div>
+                    <br><br>
+                 <div id=pergunta> 
+                    
+                8 - É recomendado que a mamografia seja feita por mulheres: 
+                    <br><br> 
+                     <font class="resposta">(A)<input type="radio" name="question8" VALUE="A"> Entre os 50 e os 69 anos, uma vez a cada dois anos</font><br>
+                     <font class="resposta">(B)<input type="radio" name="question8" VALUE="B"> A partir dos 40 anos, anualmente</font><br>
+                     <font class="resposta">(C)<input type="radio" name="question8" VALUE="C"> Em qualquer idade nos casos de risco genético</font><br>
+
+                
+            </div>
+                    <br><br>
+                 <div id=pergunta> 
+                    
+                9 -  O que é o exame clínico das mamas?
+                    <br><br> 
+                     <font class="resposta">(A)<input type="radio" name="question9" VALUE="A"> Auto-observação das mamas realizada pela própria mulher </font><br>
+                     <font class="resposta">(B)<input type="radio" name="question9" VALUE="B"> Exame conhecido como preventivo ginecológico (Papanicolaou)</font><br>
+                     <font class="resposta">(C)<input type="radio" name="question9" VALUE="C">  Observação e palpação das mamas feitas por profissional de saúde capacitado</font><br>
+
+            
+            </div>
+                        <br><br>
+                    </h4> 
+                 
+                
+                <div class="resultado" id="baixo">
+                     <input type="button" name="valide" VALUE="Resultado" onclick="javascript:solution(this.form);"><br><br>
+                     <a href=# onClick="vai()"> [Clique aqui para fazer Novamente]</a>
+                </div>
+
+                    
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+            
+        </main>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Débora Miyake 1800272 Turma A -->
+<html>
+    <head>
+        <meta charset="UTF-8" /> 
+        <title>Formulários</title>
+    </head>
+    <body>
+	<script>
+	function submete(nome) {
+	 if (nome.value==null || nome.value == "" ){
+	window.alert("Favor informar seu nome");
+	nome.focus();
+	return false;
+	}
+	else {
+	window.alert("Obrigada!");
+	return true;
+	}
+	}
+</script>
+	<form name="form1" action="" onsubmit="return submete(nome)"
+	method="post">
+            Endereço de e-mail: <input type="text" name="email" size="25" maxlength="25" onblur="submete()"/>
+            <br />
+            Nome: <input type="text" name="nome" size="25" maxlength="20" />
+            <br />
+            Sexo: <select name="sexo">
+                        <option value="null" selected disabled>Escolha...</option>
+                        <option value="masc">Masculino</option>
+                        <option value="fem">Feminino</option>
+                  </select>
+            <br />
+            Curso: <select name="curso">
+                        <option value="null" selected disabled>Escolha...</option>
+                        <option value="TI">Informática para Internet</option>
+                        <option value="AI">Automação Industrial</option>
+                        <option value="AL">Alimentos</option>
+                  </select>
+            <br />
+            Endereço para correspondência: <input type="text" name="end" size="25" maxlength="25" onblur="submete()" />
+            <br />
+            Complemento do endereço: <input type="text" name="compl" size="25" maxlength="25" onblur="submete()"/>
+            <br />
+            CEP: <input type="number" name="cep" size="12" maxlength="8" />
+            <br />
+            Município: <input type="text" name="muni" size="25" maxlength="15" /><select name="estado">
+                       <option value="SP">SP</option>
+                       <option value="RJ">RJ</option>
+                  </select>
+            <br />
+            <input type="submit" value="Salvar" />
+        </form>
+    </body>
+</html>

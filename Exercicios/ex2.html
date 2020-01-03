@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- Débora Miyake 1800272 Turma A -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Jogo</title>
+    </head>
+    <body> 
+    <script>
+     alert("Vamos Jogar Jo-ken-po")
+    var usuario = prompt("Voce escolhe pedra, papel ou tesoura?");
+    var computador = Math.floor( Math.random() * 3 +1);
+    if (computador < 1) {
+        computador = "pedra";
+    } else if (computador <= 3) {
+        computador = "papel";
+    } else {
+        computador = "tesoura";
+    }
+     alert("Computador: " + computador);
+    
+    
+    var resposta = function (n1, n2) {
+        if (n1 === n2)
+            return ("O resultado é um empate!")
+        else if (n1 === "pedra") {
+            if (n2 === "tesoura")
+                return ("pedra vence")
+            else {
+                return ("papel vence")
+            }
+        }
+        else if (n1 === "papel") {
+            if (n2 === "pedra")
+                return "papel vence"
+            else {
+                return "tesoura vence"
+            }
+        }
+        else if (n1 === "tesoura") {
+            if (n2 === "pedra")
+                return "pedra vence"
+            else {
+                return "tesoura vence"
+            }
+        }
+    };
+   alert(resposta(usuario, computador))
+   
+</script>
+    </body> 
+</html>
+
+

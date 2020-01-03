@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercicio 3</title>
+    </head>
+    <body>
+    <script>
+        function soma() {
+            a = document.s.v1.value;
+            b = document.s.v2.value;
+            soma = parseFloat(a) + parseFloat(b);
+            document.s.v3.value = soma;
+        }
+    </script> 
+        <h2>Somador JavaScript</h2>
+         <form name=s>
+            <input type="text" name="v1" size="3"> +
+            <input type="text" name="v2" size="3">
+            <input type="button" value=" = " onclick="soma()">
+            <input type="text" name="v3" size="3">
+            <br/><br/>   
+        </form>
+    </body>
+</html>

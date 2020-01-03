@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- Débora Miyake 1800272 Turma A -->
+<html>
+    <head>
+        <meta charset="UTF-8" /> 
+        <title>ELEVADOR</title>
+    </head>
+    <body>	
+	<script>
+		var pessoas=0; peso=0; TotalPeso=0;
+		
+		while (TotalPeso <= 800) {
+			peso = Number(prompt("Digite o peso ",0));
+			pessoas++;
+			TotalPeso += peso;
+		}
+			if ((pessoas >= 15) || (TotalPeso >= 800)){
+				alert ("NÃO PODE ENTRAR: ELEVADOR LOTADO");
+				alert ("O número de pessoas transportadas é " +pessoas+" e o peso total foi de " +TotalPeso);
+		
+			}
+			else {
+				alert("PODE ENTRAR!");
+			}
+			
+    </script>
+    </body>
+</html>

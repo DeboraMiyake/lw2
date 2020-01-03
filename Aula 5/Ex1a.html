@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- Débora Miyake 1800272 Turma A -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Revisão</title>
+    </head>
+    <body> 
+    <script>
+    var cont = 0, numero, valores =[];
+
+    do  {
+        numero = Number(prompt("Digite um numero maior que 0",1));
+    if (numero > 0) {
+         alert("O quadrado de "+numero+" é "+ (numero * numero));
+         valores[cont] = numero;
+         cont++;
+    }
+    else 
+         alert ("Digite um número positivo maior que zero");  
+   
+    }
+        
+    while(cont < 10);
+        document.write("<h3>Os valores digitados foram: </h3><br/>");
+        
+    for(cont = 0; cont < 10;cont++){
+        document.write(valores[cont]+" = "+valores[cont] * valores[cont]+"<br/>");
+    }    
+    </script> 
+    </body>
+</html>

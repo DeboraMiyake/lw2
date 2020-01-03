@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercicio 2</title>
+    </head>
+    <body> 
+    <script>
+       var mes;
+       mes= (prompt ("Digite um mes (1 a 12)", 0));
+    if ((mes > 0 ) && (mes < 13)) 
+    {
+       if (mes== "1")
+       {
+       document.write ("O mês é janeiro e os feriados são:<br>");
+       document.write ("01/01 Ano novo");    
+       }
+       else if (mes== "2")
+       {
+       document.write ("O mês é fevereiro e os feriados são:<br>");
+       document.write ("13/02 Carnaval");
+       }
+       else if (mes== "3")
+       {
+       document.write ("O mês é março e os feriados são:<br>");
+       document.write ("30/03 Paixão de Cristo");
+       }
+       else if (mes== "4")
+       {
+       document.write ("O mês é abril e os feriados são:<br>");
+       document.write ("01/04 Páscoa<br>");
+       document.write ("21/04 Tiradentes");
+       }
+       else if (mes== "5")
+       {
+       document.write ("O mês é maio e os feriados são:<br>");
+       document.write ("01/05 Dia do Trabalhador<br>");
+       document.write ("13/05 Dia das mães<br>");
+       document.write ("31/05 Corpus Christi");
+       }
+       else if (mes== "6")
+       {
+       document.write ("O mês de junho não possui feriados.");
+       }
+       else if (mes== "7")
+       {
+       document.write ("O mês de julho não possui feriados.");
+       }
+       else if (mes== "8")
+       {
+       document.write ("O mês é agosto e os feriados são:<br>");
+       document.write ("12/08 Dia dos pais");
+       } 
+       else if (mes== "9")
+       {
+       document.write ("O mês é setembro e os feriados são:<br>");
+       document.write ("07/09 Dia da Independência");
+       } 
+       else if (mes== "10")
+       {
+       document.write ("O mês é outubro e os feriados são:<br>");
+       document.write ("12/10 Dia das crianças");
+       } 
+       else if (mes== "11")
+       {
+       document.write ("O mês é novembro e os feriados são:<br>");
+       document.write ("02/11 Dia de Finados<br>");
+       document.write ("15/11 Proclamação da República<br>");
+       document.write ("20/11 Consciência Negra");
+       } 
+       else 
+       {
+       document.write ("O mês é dezembro e os feriados são:<br>");
+       document.write ("25/12 Natal");
+       }  
+    }
+        else 
+        alert ("Digite um número válido.");
+    </script> 
+    </body>
+</html>

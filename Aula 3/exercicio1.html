@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- Débora Miyake 1800272 Turma A -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercicio 1</title>
+    </head>
+    <body> 
+    <script>
+       var p; var alt; var imc;
+       p= Number.parseFloat (prompt ("Digite seu peso em kg", 0));
+       alt= Number.parseFloat (prompt ("Digite sua altura", 0));
+       imc = p/(alt*alt);
+       document.write ("Seu IMC é ", +imc.toFixed(2));
+       if (imc <= 18.5)
+       {
+       document.write ("<br> E você está abaixo do peso.");
+       }
+       else if ((imc >= 18.5) && (imc <= 25))
+       {
+       document.write ("<br> Seu peso está normal.");
+       }
+       else if ((imc >= 25) && (imc <= 30))
+       {
+       document.write ("<br> E você está acima do peso.");
+       }
+       else
+       {
+       document.write ("<br> Obesidade!");
+       }
+    </script> 
+    </body>
+</html>

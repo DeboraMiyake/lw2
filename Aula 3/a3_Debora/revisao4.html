@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- Débora Miyake 1800272 Turma A -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercicio 3</title>
+    <style>
+        body {
+        background-image: url("imagem/bg01.jpg");
+        font-family: georgia;
+        text-align: center;
+        padding-left: 300px;
+        padding-right: 300px;
+        }
+        img {
+        border-radius: 20pt;
+        filter: opacity(85%);
+        }
+        img:hover {
+        filter: none;
+        }
+    </style>
+    </head>
+    <body> 
+        <img src="imagem/laranja.jpg" alt="Laranja Mecânica" width="250"/>
+    <script> 
+       var filme = new Object();
+        filme.nome = "Filme: Laranja Mecânica";
+        filme.diretor = "Diretor: Stanley Kubrick";
+        filme.genero = "Gênero: Ficção Cientifica, Drama";
+        filme.duracao = "Duração: 2h 17m";
+        filme.classificacao = "Classificação: +18";
+        filme.sinopse = "Sinopse: Essa brilhante história cria uma sociedade futurista em que a violência atinge proporções gigantescas e provoca uma reposta igualmente agressiva de um governo totalitário. O protagonista Alex é integrante de um grupo de adolescentes delinquentes, após ser preso se submete a uma técnica de modificação de comportamento para poder ganhar sua liberdade."; 
+       document.write ("<br/>",filme["nome"]);
+       document.write ("<br/>", filme["diretor"]);
+       document.write ("<br/>", filme["genero"]);
+       document.write ("<br/>", filme["duracao"]);
+       document.write ("<br/>", filme["classificacao"]);
+       document.write ("<br/>", filme["sinopse"]);
+    </script> 
+    </body>
+</html>

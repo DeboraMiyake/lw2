@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="CSS.css" />
+        <link rel="icon" href="img/navicon.png" />
+        <title>Prevenção</title>
+        <script>
+             num_selecao = 0;
+             function ImgAnt () {
+             num_selecao--;
+             if (num_selecao < 1) {
+                 num_selecao = 5;
+             }
+             img_destaque.src = "img/" + num_selecao + ".jpg";
+             }
+            
+            function ImgProx () {
+             num_selecao++;
+             if (num_selecao > 5) {
+                 num_selecao = 1;
+             }
+             img_destaque.src = "img/" + num_selecao + ".jpg";
+             }
+            </script>
+    </head>
+    <body>
+        <nav>
+            <div class="navLimit">
+                <div class="navPags">
+                    <div class="navItem">
+                        <a href="index.html">
+                            <h4>O que é?</h4>
+                        </a>
+                    </div>
+                    <div class="navItem">
+                        <a href="cancer-de-mama.html">
+                            <h4 >Câncer de Mama</h4>
+                        </a>
+                    </div>
+                    <div class="navItem">
+                        <a href="prevencao.html">
+                            <h4 style="color: #ffffff;">Prevenção</h4>
+                        </a>
+                    </div>
+                    <div class="navItem">
+                        <a href="quiz.html">
+                            <h4>Quiz</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="mainLimit">
+                <div class="mainTitle">
+                    <h1>Como prevenir?</h1>
+                </div>
+
+                 <div class="imagem">
+                     <img src="img/vamosprevenir.jpeg" alt="Vamos prevenir" width="750"/>
+                    </div>
+
+                <div class="mainText">
+                 <h3 style="font-weight: bold">Autoexame e prevenção do câncer de mama</h3>
+                    <h4>
+                     Manter hábitos saudáveis é a melhor forma de prevenir o câncer de mama, o que inclui uma dieta pobre em alimentos gordurosos, atividade física regular, pouca ingestão de bebidas alcoólicas e nenhum cigarro. A atividade física e o aleitamento são considerados os principais fatores de proteção contra a doença.
+                     A detecção do câncer de mama nas etapas iniciais aumenta as chances de cura. O autoexame e o exame clínico das mamas feito por um profissional treinado são os procedimentos recomendados para a detecção precoce da doença.
+                    </h4>
+                
+                    <h3 style="font-weight: bold">Autoexame de mama</h3>
+                    <h4>
+                    O autoexame de mama não substitui o exame clínico que deve ser feito a cada dois anos a partir dos 30 ou 35 anos. Mas a mulher pode ajudar na detecção precoce do câncer de mama fazendo o toque das mamas. Mas encontrar um nódulo não quer dizer que seja um câncer. Só um médico pode fazer o diagnóstico após exames.
+                    </h4>
+                    <h4>
+                        <ul>    
+                            <li>O autoexame é recomendado  a partir dos 20 anos de idade;</li>
+                            <li>A periodicidade deve ser mensal;</li>
+                            <li>O ideal é fazer a palpação das mamas entre o quarto e o sexto dias após o fim do fluxo menstrual;</li>
+                            <li>Mulheres que não menstruam devem fixar uma data para fazer a avaliação;</li>
+                            <li>As mulheres devem fazer a apalpação dos seios em frente ao espelho e durante o banho ou deitadas;</li>
+                            <li>Na frente do espelho, a mulher deve observar se há deformação ou alteração no formato das mamas, abaulamentos ou retrações e feridas ao redor do mamilo;</li>
+                            <li>No banho ou deitada, a mulher deve observar a presença de caroços nas mamas ou axilas e secreção nos mamilos.</li>
+                        </ul>  
+                    </h4>
+                    <br/>
+                    <div class="imagem">
+                         <img src="img/autoexame1.jpg" alt="Autoexame" width="950"/>
+                    </div>
+                    <h3 style="font-weight: bold">Mamografia</h3>
+                    <h4>
+                    Os médicos recomendam a primeira mamografia entre 30 e 35 anos. Por volta dessa idade começam a ocorrer as primeiras transformações hormonais na mulher. A mamografia também é importante porque mulheres que trazem algum gene mutante podem manifestar o câncer nesta época.
+                    A mamografia é o único exame capaz de detectar uma lesão cerca de cinco anos antes dela se tornar palpável, ainda na fase de microcalcificação. O uso da mamografia associado ao ultrassom garante 97% de acerto nos diagnósticos de câncer de mama.
+                    </h4>
+                    <br/>
+                </div>
+                <h3 style="font-weight: bold">Conheça algumas mulheres que venceram o câncer de mama:</h3> <br/>
+                    <div class="imagem">
+                    <div class="mulheres">
+                    <div class="item_peq">
+                        <img src="img/antes.png" alt="Anterior" onclick="ImgAnt()" />
+                    </div>
+                    <div class="item_dest">
+                        <img id="img_destaque" src="img/apoiamos.png" width="700" height="450" alt="Selecionada" />
+                    </div>  
+                    <div class="item_peq">
+                        <img src="img/depois.png" alt="Proximo" onclick="ImgProx()" />  
+                    </div>
+                    </div>
+                    </div>
+                </div>
+        
+                <br/>
+    
+        </main>
+    </body>
+</html>

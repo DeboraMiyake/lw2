@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Débora Miyake 1800272 Turma A -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Operação</title>
+    </head>
+    <body> 
+    <script>
+        function soma(num1,num2){
+            some = num1 + num2;
+            return some;
+        }
+        function subtracao (num1,num2){
+            sub = num1 - num2;
+            return sub;
+        }
+        var num1,num2, operacao, some= 0, sub =0;
+        
+        
+         num1 = Number(prompt("Digite o primeiro número:",1));
+         num2 = Number(prompt("Digite o segundo número:",1));
+         operacao = prompt("Digite a operação que deseja realizar, soma ou subtração?",1);
+        
+        if(operacao == "soma"){
+             document.write("A soma desses números é: "+num1+" + "+num2+" = "+soma(num1,num2)); 
+            
+        }
+        else {
+            if(operacao == "subtração"){
+               document.write("A subtração desses números é: "+num1+" - "+num2+" = "+subtracao(num1,num2));  
+            }
+            else {
+               document.write("Você digitou o número  "+num1+" e o número "+num2);  
+            }
+        }
+    </script> 
+    </body> 
+</html>
+

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercicio 11</title>
+    </head>
+    <body>
+    <script>
+       var peso; var qt; var resto; var g;
+       peso= Number.parseFloat (prompt ("Quanto pesa o saco de ração em kg?", 0));
+       qt= Number.parseFloat (prompt ("Qual a quantidade de ração fornecida a cada gato?", 0));
+       peso= (peso*1000);
+       g= (qt*2)*5;
+       resto= (peso-g);
+       document.write ("Apos 5 dias restará ", +resto, "g de ração para os gatos.");
+    </script> 
+    </body>
+</html>

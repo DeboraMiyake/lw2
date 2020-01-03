@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- Débora Miyake 1800272 Turma A -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Soma</title>
+    </head>
+    <body> 
+    <script>
+	    function quadrado (num1) {
+			return num1 * num1;
+		}
+		function soma (num1) {
+			s+=num1;
+		}
+		var numero,cont, s=0;
+		for (cont =1; cont <= 5; cont++) {
+		
+		numero = Number(prompt("Digite um valor: ",1));
+		document.write("O quadrade de " +numero+" é "+quadrado(numero)+"<br/>");
+		soma(numero);
+		}
+		document.write("A soma dos valores é " +s ) ;
+		document.write("</br> A média dos valores é " +s/5);
+    </script> 
+    </body> 
+</html>

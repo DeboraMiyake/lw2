@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercicio 9</title>
+    </head>
+    <body>
+    <script>
+       var pfab; var pluc; var pimp; var pf; var luc; var imp;
+       pfab= Number.parseFloat (prompt ("Qual o preço de fabrica?", 0));
+       pluc= Number.parseFloat (prompt ("Qual o percentual de lucro do distribuidor?", 0));
+       pimp= Number.parseFloat (prompt ("E o percentual de imposto?", 0));
+       luc= (pluc/100)*pfab;
+       imp= (pimp/100)*pfab;
+       pf= (pfab+ luc+ imp);
+       document.write ("O lucro do distribuidor é ", +luc);
+       document.write (", o valor de impostos aplicados é ", +imp);
+       document.write (" e o preço final do seu carro novo é ", +pf)
+    </script> 
+    </body>
+</html>

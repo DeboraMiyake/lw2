@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercicio 1</title>
+    </head>
+    <body> 
+    <script>
+       var frutas = ["morango", "laranja", "pitanga", "uva"];
+       var legumes = ["abóbora", "tomate", "batata"];
+       var tam = frutas.lenght;
+       document.write (frutas[3]);
+       document.write ("<br/>Tamanho do vetor frutas: "+tam);
+       document.write ("<br/>"+frutas.toString());
+       frutas.push ("abacate");
+       document.write ("<br/>"+frutas.toString());
+       frutas.pop() ;
+       document.write ("<br/>"+frutas.toString());
+       frutas.shift() ;
+       document.write ("<br/>"+frutas.toString());
+       frutas.unshift() ;
+       document.write ("<br/>"+frutas.toString());
+       frutas.splice(2,0,"pera","maçã","cacau");
+       document.write ("<br/>"+frutas.toString());
+    </script> 
+    </body>
+</html>

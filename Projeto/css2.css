@@ -1,0 +1,78 @@
+body {  
+    background-image: url("img/bg01.jpg");
+    font-family: georgia;
+}
+
+.login {
+    background-color: white;
+    color: darkgray;
+    width: 20rem;
+    height: 25rem;
+    padding: 15px;
+    display:flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top:10rem;
+    border: 3px black double ;
+}
+.login h2 {
+    color: darksalmon;
+    text-align: center;
+}
+
+.cadastro {
+    background-color: white;
+    width: 68rem;
+    height: 30rem;
+    padding: 15px;
+    display:flex;
+    margin: 0 auto;
+    margin-top: 6rem;
+    border: 3px black double;
+}
+.cadastro h2 {
+    color: darksalmon;
+    text-align: center;
+}
+
+.login h2:hover, .cadastro h2:hover{
+    color: gray;
+}
+input[type=submit]:hover {
+    color: darksalmon;
+    background-color: whitesmoke;
+    cursor:pointer;
+}
+.cadastro p {
+    color: darkgray;     
+    display: inline-grid;
+    grid-gap: 4px; /*espaço entre o texto e a coluna*/
+    grid-template-columns: 360px; /*espaço entre as colunas*/
+}
+input, select {   
+    border-radius:4px;
+    box-shadow: 1px 1px 2px #333333;    
+    background: #fafafa; 
+    border:1px solid #000000;
+    height:25px;
+    width: 20rem;
+}
+input[type=submit] {
+        background: darksalmon;
+        color:#ffffff;
+        font-size: 15px;
+        width: 100px;
+        text-align: center;
+        align-items: center;
+}
+.dados {
+    background-color: white;
+    color: black;
+    width: 20rem;
+    height: 25rem;
+    padding: 15px;
+    align-items: center;
+    margin: 0 auto;
+    margin-top:10rem;
+    border: 3px black double ;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- Débora Miyake 1800272 Turma A -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Saque</title>
+    </head>
+    <body> 
+    <script>
+
+       var valor=0,saque50=0,saque10=0;
+       valor = Number(prompt("Digite o valor que deseja sacar:",1));
+       if((valor >= 50) ){
+       saque50 = valor /50;
+       }
+       else {
+          if(valor >= 10 ){
+          saque10 = valor /10;
+               
+            }
+        }
+        document.write("Você vai receber "+saque50+" notas de 50 e "+saque10+" notas de 10");       
+    </script> 
+    </body> 
+</html>
+
+

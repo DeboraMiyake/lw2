@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- Débora Miyake 1800272 Turma A -->
+<html>
+    <head>
+        <meta charset="UTF-8" /> 
+        <title>JOGO DAS FITAS</title>
+    </head>
+    <body>
+	<script>
+	var f1, f2, rateio;
+	f1= prompt("Informe a cor da primeira ficha (branca/preta): ") ;
+	f2= prompt("Informe a cor da segunda ficha (branca/preta): ") ;
+	
+	if ((f1== "branca") && (f2== "branca")){
+	rateio = "0 - Perdeu tudo!";
+	}
+	else if ((f1== "branca") && (f2== "preta")) {
+	rateio = "1/2 - Ganha metade!";
+	}
+	else if ((f1== "preta") && (f2== "branca")) {
+	rateio = "1 - Recebe o dinheiro de volta!";
+	}
+	else if ((f1== "preta") && (f2== "preta")){
+	rateio = "2 - Ganhou o dobro!";
+	}
+	else {
+	rateio = "Valor inválido! Digite a cor da sua fita (branca ou preta)";
+	}
+	alert ("O rateio é: " +rateio);
+    </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!-- Débora Miyake 1800272 Turma A -->
+<html>
+	<head>
+		<meta charset="UTF-8" /> 
+		<title>Mouse</title>
+	</head>
+<body>
+<script>
+function mudaImg(){
+this.setAttribute("src","imagens/panda.jpg");
+}
+function voltaImg(){
+this.setAttribute("src","imagens/panda2.jpg");
+}
+</script>
+<img src="imagens/panda.jpg" onmouseover="mudaImg.call(this)" onmouseout="voltaImg.call(this)"/>
+</body>
+</html>

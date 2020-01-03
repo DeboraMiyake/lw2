@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- Débora Miyake 1800272 Turma A -->
+<html>
+	<head>
+		<meta charset="UTF-8" /> 
+		<title>Olá!</title>
+	</head>
+<body>
+<script>
+var data = new Date(); var hora = data.getHours(); var nome;
+
+nome= prompt("Qual o seu nome?");
+if(hora >= 0 && hora <= 12){
+document.write ("Bom dia "+nome);
+}
+if(hora > 12 && hora <= 18){
+document.write ("Boa tarde "+nome);
+}
+if(hora > 18 && hora <= 24){
+document.write ("Boa noite "+nome);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercicio 3</title>
+    </head>
+    <body>
+    <script>
+       var nota1; var nota2; var nota3; var peso1; var peso2; var peso3;
+       nota1= Number.parseFloat (prompt ("Digite a primeira nota", 0));
+       peso1= Number (prompt ("Digite o peso da primeira nota", 0)); 
+       nota2= Number.parseFloat (prompt ("Digite a segunda nota", 0));
+       peso2= Number (prompt ("Digite o peso da segunda nota", 0)); 
+       nota3= Number.parseFloat (prompt ("Digite a terceira nota", 0));
+       peso3= Number (prompt ("Digite o peso da terceira nota", 0)); 
+       mp= (nota1 * peso1 + nota2 * peso2 + nota3 * peso3)/ (peso1 + peso2 +peso3);
+       document.write ("A média ponderada é ", +mp.toFixed(2));
+    </script> 
+    </body>
+</html>

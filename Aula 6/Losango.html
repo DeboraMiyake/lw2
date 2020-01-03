@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<!-- Débora Miyake 1800272 Turma A -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Losango</title>
+    </head>
+    <body> 
+    <script>
+	  function losango (linhas) {
+		var cont;
+		for(cont=1;cont <= linhas; cont+=2) {
+		    for(cont1 = 1; cont1 <= cont; cont1++) {
+		    document.write("*");
+		}
+		    document.write("<br/>");
+		}
+		for(cont=linhas-1;cont >= 1;cont-=2) {
+		    for(cont1 = 1;cont1 < cont; cont1++) {
+		    document.write("*");
+		}
+		    document.write("<br/>");
+		}
+	}
+	var linha;
+	linha = Number(prompt("Quantidade de linhas: ",1));
+	losango(linha);
+    </script> 
+    </body> 
+</html>

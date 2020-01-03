@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- Débora Miyake 1800272 Turma A -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Revisão</title>
+    </head>
+    <body> 
+    <script>
+    var pessoas = [], cont = 1, menorIdade;
+    pessoas.numero = 1;
+    while(pessoas.numero != 0){
+    pessoas = {numero: Number(prompt("Digite o número da pessoa: ")),
+    idade: Number(prompt("Digite a idade da pessoa: "))};
+
+    if (cont == 1){
+    menorIdade = pessoas.idade;
+    numero = pessoas.numero;
+    }
+    if ((pessoas.idade < menorIdade) && (pessoas.numero != 0)){
+    menorIdade = pessoas.idade;
+    numero = pessoas.numero;
+    }
+     cont++;
+    }
+    document.write("A menor idade é da pessoa número "+numero+" que possui "+menorIdade+" anos");
+    </script> 
+    </body> 
+</html>
